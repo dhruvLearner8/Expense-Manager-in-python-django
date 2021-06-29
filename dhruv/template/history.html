@@ -58,7 +58,7 @@
         <div class="top">
             <div class="budget">
                 <div class="budget__title">
-                    Available Budget in <span class="budget__title--month">%Month%</span>:
+                    <h2>Available Budget</h2>  <span class="budget__title--month"></span>
                 </div>
 
                 <div class="budget__value">{{USER.balance}}</div>
@@ -90,7 +90,9 @@
                         {% for d in DESC %}
                             {% if d.type1 == 'add' %}
                         <div class="item clearfix" id="income-0">
-                            <div class="item__description">{{d.desc}} </div>
+                           
+                            <div class="item__description"><pre>{{d.created_at}}    {{d.desc}}</pre> </div>
+                            
                             <div class="right clearfix">
                                 <div class="item__value">+ {{d.amount}}</div>
                                 <a href="{% url 'Delete_Product' d.id %}"  class="item__delete">
@@ -116,7 +118,7 @@
                         {% for d in DESC %}
                             {% if d.type1 == 'sub' %}
                         <div class="item clearfix" id="expense-0">
-                            <div class="item__description">{{d.desc}}</div>
+                            <div class="item__description"><pre>{{d.created_at}}    {{d.desc}}</pre></div>
                             <div class="right clearfix">
                                 <div class="item__value">- {{d.amount}}</div>
                                 <div class="item__percentage">21%</div>

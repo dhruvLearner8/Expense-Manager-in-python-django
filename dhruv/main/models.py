@@ -20,3 +20,5 @@ class Desc(models.Model):
     amount=models.FloatField(default=0.0)
     desc=models.CharField(default="",blank=True,null=True,max_length=500)
     type1=models.CharField(default="",blank=True,null=True,max_length=5)
+    created_at=models.DateTimeField(auto_now_add=True)
+    
