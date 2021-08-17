@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,15 +81,27 @@ WSGI_APPLICATION = 'dhruv.wsgi.application'
 
 
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE' : 'django.db.backends.postgresql',
+#        'NAME' :'dinero2',
+#        'USER':'postgres',
+#        'PASSWORD':'1234',
+#        'HOST':'localhost'
+#    }
+#}
+
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
-        'NAME' :'dinero2',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost'
+        'NAME' :'d7dhaiceh68p5t',
+        'USER':'bdmltxdxmyynpj',
+        'PASSWORD':'f7f815528e401d5338189c9f2a72928e87634087765e39cde5a962d07353be2d',
+        'HOST':'ec2-54-236-137-173.compute-1.amazonaws.com'
+
     }
 }
+
 
 
 # Password validation
@@ -132,6 +146,7 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+django_heroku.settings(locals())
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
