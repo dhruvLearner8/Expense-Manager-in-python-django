@@ -99,8 +99,8 @@ DATABASES = {
         'NAME' :'d7dhaiceh68p5t',
         'USER':'bdmltxdxmyynpj',
         'PASSWORD':'f7f815528e401d5338189c9f2a72928e87634087765e39cde5a962d07353be2d',
-        'HOST':'ec2-54-236-137-173.compute-1.amazonaws.com'
-
+        'HOST':'ec2-54-236-137-173.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
@@ -147,6 +147,7 @@ USE_TZ = True
 #STATICFILES_DIRS=[
 #    os.path.join(BASE_DIR,'static')
 #]
+SESSION_COOKIE_SECURE = not DEBUG
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 #django_heroku.settings(locals())
