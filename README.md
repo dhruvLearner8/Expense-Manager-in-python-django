@@ -3,9 +3,11 @@
 #This is a expense manager website using python and django
 
 #Steps to run this file:
-1)install vs code
+1)install vs code.
+
 2)must have python and django installed in your system .
-3)Download main folder named dhruv and open in VS code 
+
+3)Download main folder named dhruv and open in VS code .
 
 BELOW STEPS FOR POSTGRESQL YOU CAN ALSO RUN THIS FILE WITH DEFAULT SQLITE3(WATCH SOME YOUTUBE VIDEO FOR DATABASE CONNECTIVITY WITH SQLITE3)
 4) download Postgresql https://www.postgresql.org/download/ this will also install pgadmin4 in your system
