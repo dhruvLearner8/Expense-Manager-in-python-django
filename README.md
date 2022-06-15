@@ -1,7 +1,7 @@
 # Expense-Manager-in-python-django
 
 #This is a expense manager website using python and django
-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
+
 #Steps to run this file:
 1)install vs code.
 
